@@ -1,8 +1,8 @@
-# Getting Started with Create React App
+# This Repository is for React Tutorials on YouTube
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Check out the playlist on [YouTube](https://www.youtube.com/playlist?list=PLJbWIRX07kDuStv26bsZcdwOFSg6dI0GN).
 
-## Available Scripts
+## All of codes will be available on different branches by the name of the Video
 
 In the project directory, you can run:
 
