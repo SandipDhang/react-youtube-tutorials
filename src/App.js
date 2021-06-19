@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import FComponent from "./components/funcComp";
+import CComponent from "./components/classComp";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      text: "React Props",
+      number: 24,
+      dataArray: [1, 2, 3],
+      dataObject: { name: "SD Creations" },
+    };
+  }
+  render() {
+    return (
+      <>
+        <h1 className="myH1">Simple React Application</h1>
+        <FComponent myData={this.state.text} myArr={this.state.dataArray} />
+        <CComponent
+          globalData={this.state.text}
+          myObj={this.state.dataObject}
+        />
+      </>
+    );
+  }
 }
 
 export default App;
